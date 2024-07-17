@@ -20,7 +20,7 @@ const connectThis = async () => {
 
 // Use CORS middleware before defining your routes
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow only this origin
+    origin: '*', // Allow only this origin
     methods: ['GET', 'POST','PUT','DELETE'], // Allow these HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
 }));
